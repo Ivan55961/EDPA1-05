@@ -5,7 +5,7 @@ import java.util.*;
  * Author's name: Marcos
  * Creation date: 27/9/2025
  * Class version: First version.
- * Class description: This class represents a satellite with different attributes.
+ * Class description: This class represents a satellite with different ttributes.
  * 
  * 
  ***********/
