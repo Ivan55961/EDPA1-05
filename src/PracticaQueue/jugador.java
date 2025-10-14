@@ -49,7 +49,7 @@ public class Jugador implements Comparable<Jugador> {
         return "RequestID: " + RequestID +" PlayerID: " + PlayerID +" Premium: " + PremiumSubscription +" SkillLevel: " + SkillLevel +" MatchType: " + MatchType;
     }
     @Override
-    public int compareTo(Jugador otra) {
-        return Integer.compare(otra.SkillLevel, this.SkillLevel);
+    public int compareTo(Jugador otro) {
+        return Integer.compare(otro.SkillLevel, this.SkillLevel);
     }
 }
