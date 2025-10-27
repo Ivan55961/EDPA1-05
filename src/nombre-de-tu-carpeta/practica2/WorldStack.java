@@ -7,5 +7,6 @@ public class WorldStack{
         for(int i=palabras.length-1; i>=0; i--){
             stack.push(palabras[i]);
         }
+        return stack;
     }
 }
