@@ -6,6 +6,9 @@ public class main {
         System.out.print("Insert a string like an operation: ");
         String texto = keyb.nextLine();
         Stack<String> pilaOperar = WorldStack.separarEnStack(texto);
+        if(pilaOperar == null || pilaOperar.isEmpty()){
+            System.out.println("Error. The stack is empty or the order of the operands is incorrect");
+        }
         System.out.print("The result of the operation is: "+calculadora(pilaOperar));
     }
     public static String calculadora(Stack<String>pilaOperar){
@@ -59,7 +62,7 @@ public class main {
         char c;
         for(int i=0; i<a.length(); i++){
             c = a.charAt(i);
-            if(b.indexOf(c)!=-1 && resultado.indexOf(c)!= -1){
+            if(b.indexOf(c)!=-1 && resultado.indexOf(c)== -1){
                 resultado = resultado + c;
             }
         }
